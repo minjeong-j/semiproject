@@ -1,0 +1,26 @@
+<%@page import="dto.MemberDTO"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%
+	MemberDTO loginMember=(MemberDTO)session.getAttribute("loginMember");
+
+	if(loginMember==null) {
+		String requestURI=request.getRequestURI();
+		
+		String queryString=request.getQueryString();
+		
+		if(queryString==null || queryString.equals("")) {
+			queryString="";
+		} else {
+			queryString="?"+queryString;
+		}
+		
+		//세션에 현재 요청 페이지의 URL 주소를 속성값으로 저장
+		session.setAttribute("url", requestURI+queryString);
+		
+		out.println("<script type='text/javascript'>");
+		out.println("location.href='"+request.getContextPath()+"/index.jsp?workgroup=chanhyuk&work=login'");
+		out.println("</script>");
+		return;
+	}
+%>

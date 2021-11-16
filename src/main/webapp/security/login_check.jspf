@@ -1,0 +1,14 @@
+<%@page import="dto.MemberDTO"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%
+	//세션에 저장된 권한 관련 정보를 반환받아 저장
+	MemberDTO loginMember=(MemberDTO)session.getAttribute("loginMember");
+	
+	if(loginMember==null) {//비로그인 사용자인 경우
+		out.println("<script type='text/javascript'>");
+		out.println("location.href='"+request.getContextPath()+"/index.jsp?workgroup=chanhyuk&work=login'");
+		out.println("</script>");
+		return;
+	}
+%>

@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(13, 13, 13);
+  color: rgb(207, 207, 207);
+}
+body, div, ul, ol, li, a, table, td, th, tbody, thead, tr, p, span, h2, h3, h4, h5, h6, fieldset, legend {
+  font-size: 12px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul, ol, li {
+  list-style: none;
+}
+#header .skip_navi {
+  position: relative;
+}
+#header .skip_navi a {
+  position: absolute;
+  top: -200px;
+  left: 0;
+  border: 1px solid #fff;
+  background-color: red;
+  color: white;
+  line-height: 30px;
+  width: 100%;
+  text-align: center;
+  text-decoration: none;
+}
+#header .skip_navi a:active, #header .skip_navi a:focus {
+  top: 0;
+  z-index: 999;
+}
+
+#wrap {
+  	position: relative;
+}
+
+#wrap #left_bar {
+  position: fixed;
+  top: 0;
+  left: 50px;
+  line-height: 2em;
+  z-index: 99;
+}
+#wrap #left_bar .logo {
+  padding: 80px 0 50px;
+}
+#wrap #left_bar .left_navi1 {
+  margin: 0 0 30px;
+}
+/* 왼쪽 메뉴 간격 */
+#wrap #left_bar .left_navi1 li{
+	margin-bottom: 6px;
+}
+#wrap #left_bar .left_navi2 {
+	margin-top : 100px;
+} 
+#left_bar .logo a {
+	font-size: 28px;
+    font-weight: 300;
+	letter-spacing:-1px; 
+}
+#left_bar {
+	width: 120px;
+    left: 20px;
+}
+
+#wrap #right_bar {
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  line-height: 2em;
+  padding-right: 30px;
+  text-align: right;
+  width: 160px;
+  height: 100%;
+  z-index: 8;
+ 
+}
+#wrap #right_bar .search {
+  margin: 80px 0 40px;
+  padding-left: 20px;
+}
+#wrap #right_bar .search input {
+   	border: 0px;
+    width: 92px;
+    height: 28px;
+}
+#wrap #right_bar .search input:focus{
+	outline: none;
+}
+/* search */
+#wrap #right_bar .search img {
+	max-width: 22px;
+	padding: 0;
+	width: 22px;
+	height: 22px;
+	cursor: pointer;
+}
+#wrap #right_bar .search fieldset {
+	border: 0px;
+	border-bottom: 1px solid rgb(207, 207, 207);
+	max-width: 125px;
+}
+#wrap #right_bar .right_name {
+  margin-bottom: 50px;
+}
+
+#wrap {
+  margin: 0 200px;
+}
+
+#wrap #content {
+  padding: 130px 0 80px;
+}
+
+#container #content .titleArea {
+	text-align: center;
+	/* margin-top: -45px; */
+	margin: -45px 0 40px 0;
+} 
+
+#container #content .main p, span {
+	font-size: 15.2px;
+	line-height: 1.7;
+}
+
+#footer {
+  margin: 0 auto;
+  text-align: left;
+  margin-bottom: 50px;
+  width: 100%;
+  text-align: center;
+  position: relative;
+}
+#footer .info {
+  display: inline-block;
+  padding: 30px 20px 0;
+  position: relative;
+  text-align: left;
+}
+#footer .info::after {
+  content: "";
+  display: block;
+  clear: left;
+}
+#footer .info .open {
+  float: left;
+  padding-right: 30px;
+}
+#footer .info .open span {
+	display: block;
+}
+
+#footer .info .address {
+  float: left;
+  line-height: 20px;
+  /* padding-left: : 40px; */
+}
+
+#footer .info .address span {
+  display: block;
+  padding-right: 20px;
+}
+/* Top */
+#footer .btnTop {
+	position: fixed;
+	bottom: 45px;
+	right: 35px;
+}
+#footer .btnTop img {
+	max-width: 30px;
+	padding: 0;
+	width: 30px;
+	height: 30px; 
+}
+
+.button {
+	width: 300px;
+	padding: 15px 30px;
+	background-color: rgb(207, 207, 207);
+	cursor: pointer;
+	padding: 15px 30px;
+	color: rgb(13, 13, 13);
+	font-size: 15px;
+	font-family: 'Montserrat', sans-serif;
+}
+.button:hover {
+	background-color: rgb(13, 13, 13);
+	color: rgb(207, 207, 207);
+	border: 2px solid rgb(207, 207, 207);
+}
